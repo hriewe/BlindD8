@@ -103,3 +103,8 @@ venv.bak/
 # mypy
 .mypy_cache/
 *.png
+API_KEY.txt
+*.jpg
+base64.txt
+temp
+request.json
