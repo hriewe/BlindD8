@@ -35,7 +35,7 @@ def get_image_details(url):
 	f = open("request.json", "w")
 	f.write(json.dumps(request_info))
 	f.close()
-	os.system("""curl -v -s -H "Content-Type: application/json" \
+	os.system("""curl --silent -s -H "Content-Type: application/json" \
 	https://vision.googleapis.com/v1/images:annotate?key={} \
 	--data-binary @request.json -o temp""".format(API_KEY))
 	return json.load(open("temp"))
