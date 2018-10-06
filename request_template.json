@@ -1,0 +1,15 @@
+{
+  "requests":[
+    {
+      "image":{
+        "content":""
+      },
+      "features":[
+        {
+          "type":"FACE_DETECTION",
+          "maxResults":1
+        }
+      ]
+    }
+  ]
+}
