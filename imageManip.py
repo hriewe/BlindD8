@@ -21,6 +21,11 @@ def trim(im):
     if bbox:
         return im.crop(bbox)
 
+# Check that the correct amount of images were passed in
+if ((len(sys.argv) < 5 or  len(sys.argv) > 5)):
+	print("Not enough arguments, image could not be generated\n")
+	sys.exit(1)
+
 # Open image for manipulation
 
 images = map(Image.open, [sys.argv[1], sys.argv[2], sys.argv[3]])
@@ -29,7 +34,7 @@ width, height = zip(*(i.size for i in images))
 imageWidth = sum(width)
 imageHeight = sum(height)
 
-# Set the image dimensions
+# Set the image dimensions and create the new image
 
 outputImage = Image.new('RGB', (imageWidth, imageHeight))
 
