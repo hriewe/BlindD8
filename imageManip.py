@@ -1,6 +1,5 @@
 # Hayden Riewe
 # Image Manipulation program for hackGSU hackathon
-# Credit to multiple stack overflow users for code snipits used throughout
 
 from PIL import Image, ImageDraw, ImageFont, ImageChops
 import sys
