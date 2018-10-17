@@ -1,2 +1,2 @@
 # BlindD8
-Tinder for the Visually Impaired | Project for HackGSU Fall 2018
+Tinder for the Visually Impaired | Winner at HackGSU Fall 2018
